@@ -15,6 +15,7 @@ Plugin 'davidhalter/jedi-vim'
 Plugin 'nvie/vim-flake8'
 Plugin 'jpalardy/vim-slime'
 Plugin 'jalvesaq/Nvim-R'
+Plugin 'altercation/vim-colors-solarized'
 " Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
 
 
