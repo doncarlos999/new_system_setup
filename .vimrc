@@ -10,8 +10,9 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
-Plugin 'cjrh/vim-conda' 
-Plugin 'davidhalter/jedi-vim'
+"Plugin 'cjrh/vim-conda' 
+Plugin 'ycm-core/YouCompleteMe'
+"Plugin 'davidhalter/jedi-vim'
 Plugin 'nvie/vim-flake8'
 Plugin 'jpalardy/vim-slime'
 Plugin 'jalvesaq/Nvim-R'
@@ -90,3 +91,9 @@ augroup AutoSaveFolds
 	autocmd BufWinLeave * mkview
 	autocmd BufWinEnter * silent loadview
 augroup END
+" youcompleteme options
+let g:ycm_add_preview_to_completeopt = 1
+let g:ycm_autoclose_preview_window_after_completion = 0
+let g:ycm_autoclose_preview_window_after_insertion = 1
+" relative line numbers
+set relativenumber
