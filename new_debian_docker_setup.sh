@@ -1,5 +1,7 @@
 cd
-apt update && \
+# change apt to use chinese mirrors on debian
+sed -i 's/deb\./ftp.cn./g' '/etc/apt/sources.list' && \
+	apt update && \
 	apt install -y build-essential \
 	 cmake gcc make pkg-config autoconf \
 	 automake python3-docutils libseccomp-dev \
